@@ -1,0 +1,21 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  font-family: 'Tahoma', 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, lightskyblue, steelblue);
+  color: #222;
+}
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+  height: 100vh;
+}
