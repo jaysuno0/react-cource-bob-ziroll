@@ -8,12 +8,22 @@ function handleClick(event) {
 
 function Todoitem(props) {
   const deal = props.deal;
-  const classname = props.odd ? 'todoitem' : 'todoitem odd';
+  const input = (
+    <input 
+      className="todoitem__input" 
+      value={deal.deal} 
+      type="checkbox"
+      defaultChecked={deal.done}
+    />
+  );
+
+  let classname = props.odd ? 'todoitem' : 'todoitem odd';
+  if (deal.done) classname = `${classname} done`;
   
   return (
     <div className={classname} onClick={event => handleClick(event)}>
-      <input className="todoitem__input" value={deal} type="checkbox"/>
-      <label className="todoitem__label">{deal}</label>
+      {input}
+      <label className="todoitem__label">{deal.deal}</label>
     </div>
   );
 }
