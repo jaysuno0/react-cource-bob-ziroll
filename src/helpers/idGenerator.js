@@ -8,4 +8,4 @@ function generateId() {
   return numbers.join('');
 }
 
-export default generateId;
+export { generateId };

@@ -6,4 +6,4 @@ const deals = [
   'Put winter tires'
 ];
 
-export default deals;
+export { deals };

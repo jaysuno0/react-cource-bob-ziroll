@@ -1,5 +1,5 @@
 import './jokeGenerator.css';
-import { getJoke as generateJoke } from '../getJoke';
+import { getJoke as generateJoke } from '../../getJoke';
 import { useState } from 'react';
 
 function JokeGenerator() {
