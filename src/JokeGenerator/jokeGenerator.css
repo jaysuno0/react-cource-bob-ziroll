@@ -1,0 +1,44 @@
+.joke-generator {
+  max-width: 600px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 10px solid rgb(51, 194, 255);
+  background-color: rgb(28, 95, 123);
+  color: rgb(174, 231, 255);
+}
+
+.joke-generator__title {
+  font-size: 30px;
+
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.joke-generator__joke p {
+  padding: 7px 0px;
+}
+
+.joke-generator button {
+  background-color: #fffc;
+}
+.joke-generator button:hover {
+  box-shadow: 0px 0px 1px 3px rgb(51, 194, 255);
+}
+
+@keyframes loading {
+  from {
+    transform: rotateZ(0deg);
+  } to {
+    transform: rotateZ(360deg);
+  }
+}
+

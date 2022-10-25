@@ -1,8 +1,10 @@
 import deals from './deals';
 import { Todoitem } from './components/Todoitem/Todoitem';
 import generateId from './helpers/idGenerator';
+import { JokeGenerator } from './JokeGenerator/JokeGenerator';
 
 function App() {
+
   return (
     <div className="container">
       {
@@ -19,6 +21,7 @@ function App() {
           );
         })
       }
+      <JokeGenerator/>
     </div>
   );
 }
